@@ -629,6 +629,17 @@ NSString * const KILabelLinkKey = @"link";
 }
 
 #pragma mark - Interactions
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
+{
+    // Make sure event can pass to superview
+    NSDictionary *touchedLink = [self linkAtPoint:point];
+    if (touchedLink != nil)
+    {
+        return YES;
+    }
+
+    return NO;
+}
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
