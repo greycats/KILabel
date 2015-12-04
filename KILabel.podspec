@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/Krelborn/KILabel.git", :tag => "1.1.0" }
+  s.source       = { :git => "https://github.com/greycats/KILabel.git", :tag => "1.1.0" }
 
   s.source_files  = "KILabel/Source/**/*.{h,m}"
   public_header_files = "KILabel/Source/**/*.h"
